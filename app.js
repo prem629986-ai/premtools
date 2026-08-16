@@ -613,5 +613,10 @@ function runTool() {
           }
         );
 
-      downloadBlob(
-        blob,
+     downloadBlob(
+  blob,
+  "premtools.txt"
+);
+
+return;
+}
