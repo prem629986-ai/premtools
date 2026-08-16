@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PremTools — Free Online Image, PDF & Utility Tools</title>
+<meta name="description" content="PremTools offers free online image, PDF, document and utility tools. Resize, compress, convert, crop and more.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://premtools.com/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="#"><b>P</b> Prem<span>Tools</span></a><nav><a href="#tools">All Tools</a><a href="#categories">Categories</a><a href="#about">About</a></nav><button class="hamb" onclick="document.body.classList.toggle('navopen')">☰</button></div></header>
+<section class="hero"><div class="wrap"><div class="pill">⚡ Free • Fast • Secure</div><h1>All your files.<br><em>One simple toolkit.</em></h1><p>Compress, resize, convert and edit images, PDFs and documents online.</p><div class="search"><span>⌕</span><input id="search" oninput="filterTools()" placeholder="Search tools, e.g. image compressor"></div></div></section>
+<main class="wrap">
+<section id="categories" class="categories"><button class="active" onclick="cat('all',this)">All</button><button onclick="cat('image',this)">🖼 Image</button><button onclick="cat('pdf',this)">📄 PDF</button><button onclick="cat('document',this)">📝 Document</button><button onclick="cat('utility',this)">🧰 Utility</button></section>
+<section id="tools"><div class="title"><div><h2>Popular Tools</h2><p>Useful tools for everyday files</p></div></div><div id="grid" class="grid"></div></section>
+<section id="about" class="about"><h2>PremTools</h2><p>Fast, simple and mobile-friendly online utilities. Your files are processed in your browser whenever possible.</p></section>
+</main>
+<footer>© 2026 PremTools · Free Online Tools</footer>
+<div id="modal" class="modal hidden"><div class="modalbox"><button class="close" onclick="closeTool()">×</button><h2 id="mtitle"></h2><p id="mdesc"></p><div id="controls"></div><label class="drop">📁 Choose File<input id="file" type="file" onchange="pickFile(event)"></label><div id="preview" class="preview">Select a file to begin</div><button id="run" class="run" disabled onclick="runTool()">Process & Download</button></div></div>
+<script src="app.js"></script>
+</body></html>

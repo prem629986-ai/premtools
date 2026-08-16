@@ -1,0 +1,1 @@
+PremTools full responsive starter. Upload files to your hosting. Replace the canonical/domain URLs with your real domain. Connect server-side PDF/OCR/background-removal APIs for production-grade versions.
