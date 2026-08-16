@@ -203,12 +203,23 @@ function openTool(m) {
     `;
   }
 
-  if (m === "rotate") {
-    controls.innerHTML = `
-      <div class="ctrl">
-        <button type="button"
-          onclick="rotatePreview(-90)">function closeTool() {
-  if (modal) modal.classList.remove("show");
+ if (m === "rotate") {
+  controls.innerHTML = `
+    <div class="ctrl">
+      <button type="button" onclick="rotatePreview(-90)">
+        ↶ Rotate Left
+      </button>
+      <button type="button" onclick="rotatePreview(90)">
+        ↷ Rotate Right
+      </button>
+      <button type="button" onclick="flipPreview('x')">
+        ↔️ Flip Horizontal
+      </button>
+      <button type="button" onclick="flipPreview('y')">
+        ↕️ Flip Vertical
+      </button>
+    </div>
+  `;
 }
 
 if (fileInput) {
